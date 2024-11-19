@@ -16,8 +16,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ParXonDemo1"
         tools:targetApi="31">
+<<<<<<< HEAD
 
         <!-- Splash Screen Activity (Launcher) -->
+=======
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+>>>>>>> 0201999a1f65035a557cd21c76bb958c43a5d9dd
         <activity
             android:name=".SplashScreenOk"
             android:exported="true">
@@ -27,6 +35,7 @@
             </intent-filter>
         </activity>
 
+<<<<<<< HEAD
         <!-- Main Activity -->
         <activity
             android:name=".MainActivity"
@@ -34,4 +43,13 @@
         </activity>
 
     </application>
+=======
+        <activity
+            android:name=".RatingPageActivity"
+        android:label="Rate Difficulty"
+        android:theme="@style/Theme.ParXonDemo1" />
+
+    </application>
+
+>>>>>>> 0201999a1f65035a557cd21c76bb958c43a5d9dd
 </manifest>

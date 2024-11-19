@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_image"
+    android:padding="16dp">
+
+    <!-- Title TextView -->
+<TextView
+android:id="@+id/title"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="ParXon"
+android:textSize="32sp"
+android:textColor="#3c7962"
+android:textStyle="bold"
+android:layout_gravity="center_horizontal"
+android:layout_marginBottom="8dp" />
+
+    <!-- Subtitle TextView -->
+<TextView
+android:id="@+id/subtitle"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Patient"
+android:textSize="24sp"
+android:textStyle="bold"
+android:textColor="@android:color/black"
+android:layout_gravity="center_horizontal"
+android:layout_marginBottom="16dp" />
+
+    <!-- Instruction TextView -->
+<TextView
+android:id="@+id/instruction"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Fill your Details"
+android:textSize="22sp"
+android:textColor="@android:color/black"
+android:layout_gravity="center_horizontal"
+android:layout_marginBottom="16dp" />
+
+    <!-- Name EditText -->
+<EditText
+android:id="@+id/name_input"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="Name"
+android:background="@drawable/rounded_edittext"
+android:padding="10dp"
+android:layout_marginBottom="16dp" />
+
+    <!-- Age and Gender Horizontal Layout -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:weightSum="2"
+android:layout_marginBottom="16dp">
+
+<!-- Age EditText -->
+<EditText
+    android:id="@+id/age_input"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:hint="Age"
+    android:inputType="number"
+    android:background="@drawable/rounded_edittext"
+    android:padding="10dp"
+    android:layout_marginEnd="8dp" />
+
+<!-- Gender EditText -->
+<EditText
+    android:id="@+id/gender_input"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:hint="Gender"
+    android:background="@drawable/rounded_edittext"
+    android:padding="10dp" />
+</LinearLayout>
+
+    <!-- Stage EditText -->
+<EditText
+android:id="@+id/stage_input"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="Stage"
+android:background="@drawable/rounded_edittext"
+android:padding="10dp"
+android:layout_marginTop="16dp"
+android:layout_marginBottom="32dp" />
+
+    <!-- Analyze Button -->
+<Button
+android:id="@+id/analyze_button"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:backgroundTint="#3c7962"
+android:text="Analyze"
+android:textColor="@android:color/white" />
+    </LinearLayout>

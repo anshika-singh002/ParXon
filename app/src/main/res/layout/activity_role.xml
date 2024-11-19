@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_image"
+    android:padding="16dp">
+
+    <!-- Title TextView (Bold) -->
+<TextView
+android:id="@+id/title"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="ParXon"
+android:textSize="32sp"
+android:textColor="#0a522a"
+android:layout_gravity="center_horizontal"
+android:layout_marginBottom="16dp"
+android:textStyle="bold" />
+
+    <!-- Subtitle TextView (Your Role) in the middle -->
+<TextView
+android:id="@+id/role_prompt"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="You're a"
+android:textSize="20sp"
+android:textColor="#000000"
+android:layout_gravity="center_horizontal"
+android:layout_marginBottom="8dp" />
+
+    <!-- Role Placeholder -->
+<TextView
+android:id="@+id/role_placeholder"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="(Your Role)"
+android:textSize="18sp"
+android:textColor="#000000"
+android:layout_gravity="center_horizontal"
+android:layout_marginBottom="24dp" />
+
+    <!-- Patient Button -->
+<Button
+android:id="@+id/patient_button"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Patient"
+android:backgroundTint="#3c7962"
+android:textColor="@android:color/white"
+android:layout_marginBottom="16dp" />
+
+    <!-- Caretaker Button -->
+<Button
+android:id="@+id/caretaker_button"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Caretaker"
+android:backgroundTint="#3c7962"
+android:textColor="@android:color/white" />
+
+    </LinearLayout>

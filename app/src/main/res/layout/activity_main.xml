@@ -1,19 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!-- Toolbar with corrected title alignment -->
+<androidx.appcompat.widget.Toolbar
+android:id="@+id/toolBar"
+android:layout_width="match_parent"
+android:layout_height="160dp"
+android:background="#FFFFFF"
+app:title="ParXon"
+app:titleTextColor="#3C7962"
+app:titleTextAppearance="@style/ToolbarTitleStyle" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Create New Account Title -->
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+android:layout_marginBottom="24dp"
+android:text="Create New Account"
+android:textColor="#2F4F4F"
+android:textSize="20sp"
+android:textStyle="bold" />
+
+    <!-- User Name EditText -->
+<EditText
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="16dp"
+android:background="@drawable/rounded_edittext"
+android:hint="User Name"
+android:padding="12dp"
+android:textColor="#2F4F4F" />
+
+    <!-- Email EditText -->
+<EditText
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="Email"
+android:background="@drawable/rounded_edittext"
+android:padding="12dp"
+android:textColor="#2F4F4F"
+android:layout_marginBottom="16dp" />
+
+    <!-- Password EditText -->
+<EditText
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="Password"
+android:background="@drawable/rounded_edittext"
+android:padding="12dp"
+android:textColor="#2F4F4F"
+android:layout_marginBottom="16dp"
+android:inputType="textPassword" />
+
+    <!-- Sign Up Button -->
+<Button
+android:id="@+id/nextButton"
+android:layout_width="256dp"
+android:layout_height="68dp"
+android:layout_gravity="center"
+android:backgroundTint="#3c7962"
+android:text="Sign Up"
+android:textColor="#FFFFFF" />
+    </LinearLayout>

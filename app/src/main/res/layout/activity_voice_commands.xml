@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|bottom"
+        android:paddingBottom="32dp">  <!-- Adding padding for bottom space -->
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ParXon"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Voice Command Instructions Button -->
+        <Button
+            android:id="@+id/voice_command_instructions_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voice Command Instructions"
+            android:backgroundTint="#3C7962"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Voice Command Settings Button -->
+        <Button
+            android:id="@+id/voice_command_settings_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voice Command Settings"
+            android:backgroundTint="#3C7962"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="42dp" /> <!-- Increased space for better separation -->
+
+        <!-- Microphone Icon Button -->
+        <ImageButton
+            android:id="@+id/microphone_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/mic"
+            android:background="@drawable/rounded_history_button"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+</ScrollView>
