@@ -7,73 +7,77 @@
     android:padding="16dp">
 
     <!-- Title -->
-<TextView
-    android:id="@+id/titleText"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Start exercise"
-    android:textStyle="bold"
-    android:textSize="34sp"
-    android:textColor="#4A7D5B"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="24dp" />
-
-    <!-- Button Row (Start, Pause, Stop) -->
-<LinearLayout
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:orientation="horizontal"
-android:layout_below="@id/titleText"
-android:layout_centerHorizontal="true"
-android:layout_marginTop="16dp">
-
-<ImageButton
-    android:id="@+id/startButton"
-    android:layout_width="80dp"
-    android:layout_height="80dp"
-    android:background="?attr/selectableItemBackgroundBorderless"
-    android:src="@drawable/power"
-    android:contentDescription="Start"
-    android:layout_marginEnd="12dp" />
-
-<ImageButton
-    android:id="@+id/pauseButton"
-    android:layout_width="80dp"
-    android:layout_height="80dp"
-    android:background="?attr/selectableItemBackgroundBorderless"
-    android:src="@drawable/pause"
-    android:contentDescription="Pause"
-    android:layout_marginEnd="16dp" />
-
-<ImageButton
-    android:id="@+id/stopButton"
-    android:layout_width="80dp"
-    android:layout_height="80dp"
-    android:background="?attr/selectableItemBackgroundBorderless"
-    android:src="@drawable/stop"
-    android:contentDescription="Stop" />
-</LinearLayout>
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Exercise"
+        android:textStyle="bold"
+        android:textSize="34sp"
+        android:textColor="#4A7D5B"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
 
     <!-- Exercise Image -->
-<ImageView
-android:id="@+id/exerciseImage"
-android:layout_width="200dp"
-android:layout_height="200dp"
-android:layout_below="@id/startButton"
-android:layout_centerHorizontal="true"
-android:layout_marginTop="24dp"
-android:src="@drawable/ic_clapping_hands"
-android:contentDescription="Exercise" />
+    <ImageView
+        android:id="@+id/exerciseImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/titleText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:contentDescription="Exercise"
+        android:src="@drawable/exercise_1" />
 
     <!-- Next Button -->
-<Button
-    android:id="@+id/nextButton"
-    android:layout_width="200dp"
-    android:layout_height="wrap_content"
-    android:text="Next"
-    android:layout_below="@id/exerciseImage"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="180dp"
-    android:backgroundTint="#4A7D5B"
-    android:textColor="#FFFFFF" />
-    </RelativeLayout>
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_below="@id/exerciseImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4A7D5B"
+        android:textColor="#FFFFFF" />
+
+    <!-- Button Row (Start, Pause, Stop) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/nextButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp">
+
+        <ImageButton
+            android:id="@+id/startButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_background"
+            android:scaleType="centerInside"
+            android:src="@drawable/power"
+            android:contentDescription="Start"
+            android:layout_marginEnd="12dp" />
+
+        <ImageButton
+            android:id="@+id/pauseButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_background"
+            android:scaleType="centerInside"
+            android:src="@drawable/pause"
+            android:contentDescription="Pause"
+            android:layout_marginEnd="12dp" />
+
+        <ImageButton
+            android:id="@+id/stopButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/circle_background"
+            android:scaleType="centerInside"
+            android:src="@drawable/stop"
+            android:contentDescription="Stop" />
+    </LinearLayout>
+
+</RelativeLayout>

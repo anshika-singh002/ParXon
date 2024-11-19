@@ -20,15 +20,6 @@
         android:layout_marginEnd="9dp"
         android:src="@drawable/splash_icon" />
 
-    <TextView
-        android:id="@+id/appname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/appsplash"
-        android:layout_centerHorizontal="true"
-        android:text="App Name"
-        android:textColor="#FFF"
-        android:textSize="35sp"
-        android:textStyle="bold" />
+
 
 </RelativeLayout>

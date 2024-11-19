@@ -1,78 +1,73 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_image"
     android:padding="16dp">
 
-<LinearLayout
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:orientation="vertical">
-
-<!-- Title -->
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="ParXon"
-    android:textSize="32sp"
-    android:textColor="@android:color/black"
-    android:layout_gravity="start"
-    android:layout_marginBottom="16dp" />
-
-<!-- Card for Missed Activities -->
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:background="@drawable/rounded_background"
-    android:padding="16dp"
-    android:layout_marginBottom="16dp">
-
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Missed Activities"
-        android:textSize="20sp"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        android:layout_gravity="center" />
+        android:orientation="vertical">
 
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ParXon"
+            android:textSize="32sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="start"
+            android:layout_marginBottom="16dp" />
 
-</LinearLayout>
+        <!-- Card for Missed Activities -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#3C7962"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
 
-<!-- Card for Missed Medications -->
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:background="@drawable/rounded_background"
-    android:padding="16dp"
-    android:layout_marginBottom="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Missed Activities"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+        </LinearLayout>
 
+        <!-- Card for Missed Notifications -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#3C7962"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Missed Notifications"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+        </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Missed Notifications"
-        android:textSize="20sp"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        android:layout_gravity="center" />
-</LinearLayout>
-
-<!-- Contact Patient Button -->
-<Button
-    android:id="@+id/contact_patient_button"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Contact Patient"
-    android:backgroundTint="#3C7962"
-    android:textColor="#FFFFFF"
-    android:drawableEnd="@drawable/mic"
-    android:layout_marginTop="16dp" />
-
-<!-- Add any other buttons or content here, ensuring proper spacing between elements -->
-</LinearLayout>
-    </ScrollView>
+        <!-- Contact Patient Button -->
+        <Button
+            android:id="@+id/contact_patient_button"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Contact Patient"
+            android:backgroundTint="#3c7962"
+            android:textColor="#FFFFFF"
+            android:drawableEnd="@drawable/mic"
+            android:layout_marginTop="16dp"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp" />
+    </LinearLayout>
+</ScrollView>
