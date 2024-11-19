@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image"
+    android:padding="16dp">
+
+    <!-- Title (Rate difficulty) -->
+<TextView
+android:id="@+id/titleText"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Rate difficulty"
+android:textSize="34sp"
+android:textColor="#4A7D5B"
+android:textStyle="bold"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="24dp" />
+
+    <!-- Star Rating -->
+<LinearLayout
+android:id="@+id/starRatingLayout"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_below="@id/titleText"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="16dp">
+
+<!-- Star icons (5 stars in total) -->
+<ImageView
+    android:layout_width="32dp"
+    android:layout_height="32dp"
+    android:src="@drawable/star"
+    android:contentDescription="Star" />
+
+<ImageView
+    android:layout_width="32dp"
+    android:layout_height="32dp"
+    android:src="@drawable/star"
+    android:contentDescription="Star" />
+
+<ImageView
+    android:layout_width="32dp"
+    android:layout_height="32dp"
+    android:src="@drawable/star"
+    android:contentDescription="Star" />
+
+<ImageView
+    android:layout_width="32dp"
+    android:layout_height="32dp"
+    android:src="@drawable/star"
+    android:contentDescription="Star" />
+
+<ImageView
+    android:layout_width="32dp"
+    android:layout_height="32dp"
+    android:src="@drawable/star"
+    android:contentDescription="Star" />
+</LinearLayout>
+
+    <!-- Text Input Area for Discomfort Report -->
+<EditText
+android:id="@+id/discomfortInput"
+android:layout_width="match_parent"
+android:layout_height="100dp"
+android:hint="Report Discomfort Text Input..."
+android:background="@drawable/input_border"
+android:layout_below="@id/starRatingLayout"
+android:layout_marginTop="24dp"
+android:padding="8dp" />
+
+    <!-- Submit Button -->
+<Button
+    android:id="@+id/submitButton"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:text="Submit"
+    android:layout_below="@id/discomfortInput"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="32dp"
+    android:backgroundTint="#4A7D5B"
+    android:textColor="#FFFFFF" />
+
+    <!-- Next Button -->
+<Button
+    android:id="@+id/nextButton"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:text="Next"
+    android:layout_below="@id/submitButton"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="32dp"
+    android:backgroundTint="#4A7D5B"
+    android:textColor="#FFFFFF" />
+    </RelativeLayout>

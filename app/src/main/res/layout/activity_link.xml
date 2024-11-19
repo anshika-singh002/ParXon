@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_image"
+    tools:context=".MainActivity">
+
+<TextView
+android:id="@+id/title"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="ParXon"
+android:textStyle="bold"
+android:textSize="24sp"
+android:textColor="#3c7962"
+android:fontFamily="sans-serif-medium"
+android:layout_gravity="center_horizontal" />
+
+<TextView
+android:id="@+id/instruction"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="24dp"
+android:text="Link with your caregiver"
+android:textSize="18sp"
+android:textColor="#000000"
+android:fontFamily="sans-serif"
+android:layout_gravity="center_horizontal" />
+
+<TextView
+android:id="@+id/sub_instruction"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="8dp"
+android:text="Enter below code in caregiver's phone"
+android:textSize="14sp"
+android:textColor="#000000"
+android:fontFamily="sans-serif"
+android:layout_gravity="center_horizontal" />
+
+<EditText
+android:id="@+id/code_input"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:hint="Scan the QR to link to your Caregiver"
+android:background="@drawable/input_background"
+android:padding="12dp"
+android:textColorHint="#000000" />
+
+    <!-- Added 3cm (approximately 90dp) space between EditText and Button -->
+<Button
+    android:id="@+id/link_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="230dp"
+    android:text="Link"
+    android:backgroundTint="#3c7962"
+    android:textColor="@color/white" />
+    </LinearLayout>

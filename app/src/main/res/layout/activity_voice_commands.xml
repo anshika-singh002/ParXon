@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0D9D1"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ParXon"
+            android:textSize="32sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Voice Command Instructions Button -->
+        <Button
+            android:id="@+id/voice_command_instructions_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voice Command Instructions"
+            android:background="@drawable/rounded_history_button"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Voice Command Settings Button -->
+        <Button
+            android:id="@+id/voice_command_settings_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voice Command Settings"
+            android:background="@drawable/rounded_history_button"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Microphone Icon Button -->
+        <ImageButton
+            android:id="@+id/microphone_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/mic"
+            android:backgroundTint="@drawable/rounded_history_button"
+            android:background="@drawable/rounded_history_button"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerInside" />
+
+
+
+    </LinearLayout>
+</ScrollView>
