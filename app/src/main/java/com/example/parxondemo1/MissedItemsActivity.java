@@ -13,7 +13,7 @@ public class MissedItemsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_missed_items);
+        setContentView(R.layout.activvity_missed);
 
         // Initialize Contact Patient Button
         contactPatientButton = findViewById(R.id.contact_patient_button);

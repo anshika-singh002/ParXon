@@ -42,4 +42,7 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     implementation(libs.appcompat)
     implementation(libs.material)
+    implementation(libs.volley)
+    implementation(libs.android.gif.drawable)
+    implementation(libs.material)
 }

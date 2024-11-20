@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_image"
@@ -28,7 +27,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
         android:contentDescription="Exercise"
-        android:src="@drawable/exercise_1" />
+        android:src="@drawable/exercise_4" />
 
     <!-- Next Button -->
     <Button
@@ -80,21 +79,5 @@
             android:src="@drawable/stop"
             android:contentDescription="Stop" />
     </LinearLayout>
-
-    <!-- WebView at the bottom -->
-    <WebView
-        android:id="@+id/webView"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="16dp"
-        android:layout_below="@id/stopButton"
-        tools:ignore="NotSibling" />
-
-
-
-    </RelativeLayout>
-
-
 
 </RelativeLayout>
