@@ -1,0 +1,8 @@
+// VectorShiftApi.java
+public interface VectorShiftApi {
+    @POST("/your-api-endpoint")
+    Call<ResponseBody> sendDataToVectorShift(@Body RequestBody body);
+
+    @GET("/your-api-endpoint")
+    Call<ResponseBody> getDataFromVectorShift();
+}
