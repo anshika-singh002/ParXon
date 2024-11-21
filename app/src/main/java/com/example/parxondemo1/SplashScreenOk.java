@@ -16,41 +16,41 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class SplashScreenOk extends AppCompatActivity {
 
-    Animation up,down;
-
-    ImageView imageView;
-    TextView textView;
-
+    private Animation up, down; // Declare animations
+    private ImageView imageView;
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Enable edge-to-edge content
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash_screen_ok);
+
+        // Handle window insets for padding
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        ImageView imageView = findViewById(R.id.appsplash);
-        up = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.up);
+        // Initialize ImageView and TextView
+        imageView = findViewById(R.id.appsplash);
+        textView = findViewById(R.id.appname);
+
+        // Load animations
+        up = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.up);
+        down = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.down);
+
+        // Set animations
         imageView.setAnimation(up);
-
-
-
-        TextView textView = findViewById(R.id.appname);
-        down = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.down);
         textView.setAnimation(down);
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
 
-                startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                finish();
-
-            }
-        },3500);
-
+        // Delay for 3.5 seconds and navigate to MainActivity
+        new Handler().postDelayed(() -> {
+            startActivity(new Intent(SplashScreenOk.this, MainActivity.class));
+            finish(); // Close SplashScreenOk activity
+        }, 3500); // 3.5-second delay
     }
 }

@@ -30,28 +30,21 @@ app:titleTextAppearance="@style/ToolbarTitleStyle" />
         android:onClick="Create_New_Account"
         android:text="Create New Account"
         android:textColor="#2F4F4F"
-        android:textSize="20sp"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fetching data..."
-        android:textSize="16sp"
-        android:layout_centerInParent="true" />
 
 
     <!-- User Name EditText -->
 <EditText
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:layout_marginBottom="16dp"
-android:background="@drawable/rounded_edittext"
-android:hint="User Name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/rounded_edittext"
+    android:hint="User Name"
     android:onClick="User_Name"
-android:padding="12dp"
-android:textColor="#2F4F4F" />
+    android:padding="12dp"
+    android:scrollbars="none" android:textColor="#2F4F4F" />
 
     <!-- Email EditText -->
 <EditText

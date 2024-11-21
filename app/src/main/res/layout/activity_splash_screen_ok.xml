@@ -8,18 +8,26 @@
     android:background="@drawable/splash"
     tools:context=".SplashScreenOk">
 
+    <!-- Splash Image -->
     <ImageView
         android:id="@+id/appsplash"
-        android:layout_width="402dp"
-        android:layout_height="596dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="82dp"
-        android:layout_marginEnd="9dp"
         android:src="@drawable/splash_icon" />
 
-
+    <!-- App Name Text with Animation -->
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appsplash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="ParXon"
+        android:textColor="#3C7962"
+        android:textSize="36sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

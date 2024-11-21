@@ -124,4 +124,5 @@ public class MainActivity extends AppCompatActivity {
     public void User_Name(View view) {
         Log.d("Action", "User Name button clicked");
     }
+
 }

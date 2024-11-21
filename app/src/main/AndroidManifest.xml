@@ -11,67 +11,104 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/background_image"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ParXonDemo1"
         tools:targetApi="31">
 
-        <!-- Splash Screen -->
-        <activity
-            android:name=".SplashScreenOk"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
-        <!-- Main Activity -->
+            <!-- Main Activity -->
         <activity
-            android:name=".MainActivity"
+                android:name=".MainActivity"
+                android:exported="true" />
+        <activity
+                android:name=".DetailsActivity"
+                android:exported="true" />
+        <activity
+            android:name=".RoleActivity"
             android:exported="true" />
 
-        <!-- Role Activity -->
-        <activity android:name=".RoleActivity" />
-
-        <!-- Rating Page Activity -->
         <activity
-            android:name=".RatingPageActivity"
-            android:label="Rate Difficulty"
-            android:theme="@style/Theme.ParXonDemo1" />
+            android:name=".LinkActivity"
+            android:exported="true" />
 
-        <!-- Remainders Activity -->
-        <activity android:name=".RemaindersActivity" />
+        <activity
+            android:name=".StartExerciseActivity"
+            android:exported="true" />
 
-        <!-- History Activity -->
-        <activity android:name=".HistoryActivity" />
 
-        <!-- Link Activity -->
-        <activity android:name=".LinkActivity" />
+        <activity
+            android:name=".StartExerciseActivity2"
+            android:exported="true" />
 
-        <!-- Missed Items Activity -->
-        <activity android:name=".MissedItemsActivity" />
 
-        <!-- Details Activity -->
-        <activity android:name=".DetailsActivity" />
+        <activity
+            android:name=".StartExerciseActivity3"
+            android:exported="true" />
 
-        <!-- Voice Commands Activity -->
-        <activity android:name=".VoiceCommandsActivity" />
 
-        <!-- Start Exercise Activities -->
-        <activity android:name=".StartExerciseActivity" />
-        <activity android:name=".StartExerciseActivity2" />
-        <activity android:name=".StartExerciseActivity3" />
-        <activity android:name=".StartExerciseActivity4" />
-        <activity android:name=".StartExerciseActivity5" />
-        <activity android:name=".StartExerciseActivity6" />
-        <activity android:name=".StartExerciseActivity7" />
-        <activity android:name=".StartExerciseActivity8" />
-        <activity android:name=".StartExerciseActivity9" />
-        <activity android:name=".StartExerciseActivity10" />
-        <activity android:name=".StartExerciseActivity11" />
+        <activity
+            android:name=".StartExerciseActivity4"
+            android:exported="true" />
 
-    </application>
+
+        <activity
+            android:name=".StartExerciseActivity5"
+            android:exported="true" />
+
+
+        <activity
+            android:name=".StartExerciseActivity6"
+            android:exported="true" />
+
+
+        <activity
+            android:name=".StartExerciseActivity7"
+            android:exported="true" />
+
+
+        <activity
+            android:name=".StartExerciseActivity8"
+            android:exported="true" />
+
+
+        <activity
+            android:name=".StartExerciseActivity9"
+            android:exported="true" />
+
+
+        <activity
+            android:name=".StartExerciseActivity10"
+            android:exported="true" />
+
+        <activity
+            android:name=".StartExerciseActivity11"
+            android:exported="true" />
+
+
+        <activity
+            android:name=".MissedItemsActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".VoiceCommandsActivity"
+            android:exported="true" />
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Other activities -->
+        </application>
+
+
 </manifest>
