@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Permissions -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -16,10 +18,7 @@
         android:theme="@style/Theme.ParXonDemo1"
         tools:targetApi="31">
 
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" />
-
+        <!-- Splash Screen -->
         <activity
             android:name=".SplashScreenOk"
             android:exported="true">
@@ -29,13 +28,50 @@
             </intent-filter>
         </activity>
 
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <!-- Role Activity -->
+        <activity android:name=".RoleActivity" />
+
+        <!-- Rating Page Activity -->
         <activity
             android:name=".RatingPageActivity"
             android:label="Rate Difficulty"
             android:theme="@style/Theme.ParXonDemo1" />
 
-        <uses-permission android:name="android.permission.INTERNET" />
+        <!-- Remainders Activity -->
+        <activity android:name=".RemaindersActivity" />
 
+        <!-- History Activity -->
+        <activity android:name=".HistoryActivity" />
+
+        <!-- Link Activity -->
+        <activity android:name=".LinkActivity" />
+
+        <!-- Missed Items Activity -->
+        <activity android:name=".MissedItemsActivity" />
+
+        <!-- Details Activity -->
+        <activity android:name=".DetailsActivity" />
+
+        <!-- Voice Commands Activity -->
+        <activity android:name=".VoiceCommandsActivity" />
+
+        <!-- Start Exercise Activities -->
+        <activity android:name=".StartExerciseActivity" />
+        <activity android:name=".StartExerciseActivity2" />
+        <activity android:name=".StartExerciseActivity3" />
+        <activity android:name=".StartExerciseActivity4" />
+        <activity android:name=".StartExerciseActivity5" />
+        <activity android:name=".StartExerciseActivity6" />
+        <activity android:name=".StartExerciseActivity7" />
+        <activity android:name=".StartExerciseActivity8" />
+        <activity android:name=".StartExerciseActivity9" />
+        <activity android:name=".StartExerciseActivity10" />
+        <activity android:name=".StartExerciseActivity11" />
 
     </application>
 </manifest>

@@ -42,6 +42,7 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     implementation(libs.appcompat)
     implementation(libs.material)
+<<<<<<< HEAD
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
@@ -51,3 +52,9 @@ dependencies {
 }
 
 
+=======
+    implementation(libs.volley)
+    implementation(libs.android.gif.drawable)
+    implementation(libs.material)
+}
+>>>>>>> 1aea5d0d9bcc7b3793fc13dc0b187a27fa2bea7f
