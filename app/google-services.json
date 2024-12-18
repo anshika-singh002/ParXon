@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "738343634548",
+    "project_id": "parxondemo01",
+    "storage_bucket": "parxondemo01.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738343634548:android:c21d529eff5d3a4b74f321",
+        "android_client_info": {
+          "package_name": "com.example.parxondemo1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBy5T6n-HJeilrQvvkcGI9gS30B6CTvYcE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

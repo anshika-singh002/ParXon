@@ -1,17 +1,12 @@
-
 package com.example.parxondemo1;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -21,14 +16,17 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
-    Button button1,button2,button3;
+public class SecondActivity3 extends AppCompatActivity {
+
+
+    int[] newArray;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_second);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -38,40 +36,13 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolBar);
         setSupportActionBar(toolbar);
 
-
-        button1 = findViewById(R.id.startExercise1);
-        button2 = findViewById(R.id.startExercise2);
-        button3 = findViewById(R.id.startExercice3);
-
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,SecondActivity.class);
-                startActivity(intent);
-            }
-        });
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,SecondActivity2.class);
-                startActivity(intent);
-            }
-        });
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,SecondActivity3.class);
-                startActivity(intent);
-            }
-        });
-
-
-
-
-
+        newArray=new int[]{
+                R.id.Exercise_1,R.id.Exercise_2,R.id.Exercise_3,R.id.Exercise_4,R.id.Exercise_5,
+                R.id.Exercise_6,R.id.Exercise_7,R.id.Exercise_8,R.id.Exercise_9,R.id.Exercise_10,
+                R.id.Exercise_11,R.id.Exercise_12,R.id.Exercise_13,
+        };
 
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -138,23 +109,18 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
     }
-    public void stage1(View view) {
-        Intent intent=new Intent(MainActivity.this, SecondActivity.class);
-        startActivity(intent);
-    }
+    public void Imagebuttonclick(View view) {
 
-    public void stage2(View view) {
-        Intent intent=new Intent(MainActivity.this, SecondActivity2.class);
-        startActivity(intent);
-    }
 
-    public void stage3(View view) {
-        Intent intent=new Intent(MainActivity.this, SecondActivity3.class);
-        startActivity(intent);
-    }
+        for (int i=0;i< newArray.length;i++){
 
-    public void Games(View view) {
-        Intent intent=new Intent(MainActivity.this, GameActivity.class);
-        startActivity(intent);
+            if(view.getId() == newArray[i]){
+                int value = i+1;
+                Log.i("FIRST", String.valueOf(value));
+                Intent intent = new Intent(SecondActivity3.this,ThirdActivity3.class);
+                intent.putExtra("value",String.valueOf(value));
+                startActivity(intent);
+            }
+        }
     }
 }

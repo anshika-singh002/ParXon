@@ -1,19 +1,456 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#c0d9d1"
+    android:orientation="vertical"
+    tools:context="com.example.parxondemo1.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/cardview_light_background"
+        android:gravity="end"
+        android:textAlignment="textEnd"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="ExtraText">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ParXon"
+            android:textColor="#3c7962"
+            android:textSize="24sp"
+            android:textStyle="bold" /><![CDATA[
+
+        android:gravity="end"/>
+    ]]></androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_marginTop="10.0dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backgroundcrop"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:onClick="stage1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150.0dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:padding="5.0dp"
+                            android:text="STAGE 1"
+                            android:textAlignment="center"
+                            android:textColor="#3c7962"
+                            android:textSize="30.0dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif-monospace"
+                            android:padding="5.0dp"
+                            android:text="Exercises:5"
+                            android:textColor="#3c7962"
+                            android:textSize="20.0dp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            />
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0"
+                        >
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/exercise_5"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.0"
+                        >
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10.0dp"
+                            android:src="@drawable/baseline_arrow_forward_ios_24"
+                            >
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/startExercise1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:background="@drawable/btn"
+                    android:text="GET STARTED"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    />
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backgroundcrop"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:onClick="stage2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150.0dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:padding="5.0dp"
+                            android:text="STAGE 2"
+                            android:textAlignment="center"
+                            android:textColor="#3c7962"
+                            android:textSize="30.0dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif-monospace"
+                            android:padding="5.0dp"
+                            android:text="Exercises:5"
+                            android:textColor="#3c7962"
+                            android:textSize="20.0dp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            />
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0"
+                        >
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/exercise_5"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.0"
+                        >
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10.0dp"
+                            android:src="@drawable/baseline_arrow_forward_ios_24"
+                            >
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/startExercise2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:background="@drawable/btn"
+                    android:text="GET STARTED"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    />
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backgroundcrop"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:onClick="stage3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150.0dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:padding="5.0dp"
+                            android:text="STAGE 3"
+                            android:textAlignment="center"
+                            android:textColor="#3c7962"
+                            android:textSize="30.0dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif-monospace"
+                            android:padding="5.0dp"
+                            android:text="Exercises:5"
+                            android:textColor="#3c7962"
+                            android:textSize="20.0dp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0"
+                        >
+
+                        <pl.droidsonroids.gif.GifImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/exercise_6"
+                            />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.0"
+                        >
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10.0dp"
+                            android:src="@drawable/baseline_arrow_forward_ios_24"
+                            >
+
+                        </ImageView>
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/startExercice3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:background="@drawable/btn"
+                    android:text="GET STARTED"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:onClick="Games"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dp"
+                android:layout_marginTop="15.0dp"
+                android:background="@drawable/backgroundcrop"
+                android:orientation="vertical"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:padding="5.0dp"
+                            android:text="Lets Play Some Games!"
+                            android:textColor="#3c7962"
+                            android:textSize="30.0dp"
+                            android:textStyle="bold"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#3c7962"
+                            android:textSize="20.0dp"
+                            android:fontFamily="serif-monospace"
+                            android:text="Fun brain exercises"
+                            android:textStyle="bold"
+
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/game"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.0"
+                        >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10.0dp"
+                            android:src="@drawable/baseline_arrow_forward_ios_24"
+                            />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <FrameLayout
+                    android:id="@+id/fl_Adplaceholsder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
+

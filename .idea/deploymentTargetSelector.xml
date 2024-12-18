@@ -2,12 +2,12 @@
 <project version="4">
   <component name="deploymentTargetSelector">
     <selectionStates>
-      <SelectionState runConfigName="ParXondemo">
+      <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2024-10-16T09:53:15.908218400Z">
+        <DropdownSelection timestamp="2024-12-18T18:54:30.223524800Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="PhysicalDevice" identifier="serial=RZ8R31BNRTX" />
+              <DeviceId pluginId="PhysicalDevice" identifier="serial=ZD222L4FMP" />
             </handle>
           </Target>
         </DropdownSelection>
