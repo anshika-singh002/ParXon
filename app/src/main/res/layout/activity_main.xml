@@ -44,6 +44,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+
+            <Button
+                android:id="@+id/startVoiceButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Voice Assistant" />
+
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
