@@ -1,6 +1,7 @@
 package com.example.parxondemo1;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.animation.Animation;
@@ -17,7 +18,6 @@ import androidx.core.view.WindowInsetsCompat;
 public class SplashScreenOk extends AppCompatActivity {
 
     Animation up,down;
-
     ImageView imageView;
     TextView textView;
 
@@ -42,15 +42,18 @@ public class SplashScreenOk extends AppCompatActivity {
         TextView textView = findViewById(R.id.appname);
         down = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.down);
         textView.setAnimation(down);
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
 
-                startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                finish();
+        new Handler().postDelayed(() -> {
+            SharedPreferences preferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
+            boolean isLoggedIn = preferences.getBoolean("isLoggedIn", false);
 
+            if (isLoggedIn) {
+                startActivity(new Intent(SplashScreenOk.this, MainActivity.class));
+            } else {
+                startActivity(new Intent(SplashScreenOk.this, LoginActivity.class));
             }
-        },3500);
+            finish();
+        }, 3500);
 
     }
 }
