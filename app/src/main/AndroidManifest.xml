@@ -51,6 +51,9 @@
             android:name=".SecondActivity3"
             android:exported="false" />
         <activity
+            android:name=".SecondActivity2"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity
