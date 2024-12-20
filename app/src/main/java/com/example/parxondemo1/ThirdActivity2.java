@@ -147,7 +147,7 @@ public class ThirdActivity2 extends AppCompatActivity {
                 int newvalue=Integer.valueOf(buttonvalue)+1;
                 if (newvalue<=7){
 
-                    Intent intent = new Intent(ThirdActivity2.this, ThirdActivity2.class);
+                    Intent intent = new Intent(ThirdActivity2.this,ThirdActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     intent.putExtra("value",String.valueOf(newvalue));
                     startActivity(intent);
@@ -155,7 +155,7 @@ public class ThirdActivity2 extends AppCompatActivity {
                 }
                 else{
                     newvalue=1;
-                    Intent intent=new Intent(ThirdActivity2.this, ThirdActivity2.class);
+                    Intent intent=new Intent(ThirdActivity2.this,ThirdActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     intent.putExtra("value",String.valueOf(newvalue));
                     startActivity(intent);
