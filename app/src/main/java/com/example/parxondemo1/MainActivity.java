@@ -269,10 +269,10 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.id_privacy) {
-            openUrl("https://parxondemo1.blogspot.com/2024/12/parxondemo1-privacy-policy-page.html");
+            openUrl("https://parxon05.blogspot.com/p/privacy-policy.html");
             return true;
         } else if (id == R.id.id_term) {
-            openUrl("https://parxondemo1.blogspot.com/2024/12/parxondemo1-terms-conditions.html");
+            openUrl("https://parxon05.blogspot.com/p/terms-and-conditions.html");
             return true;
         } else if (id == R.id.id_rate) {
             openRatePage();
