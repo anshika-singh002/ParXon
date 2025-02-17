@@ -70,44 +70,22 @@ public class ThirdActivity3 extends AppCompatActivity {
         switch(intvalue){
 
             case 1:
-                setContentView(R.layout.activity_exercise_1_3);
+                setContentView(R.layout.activity_exercise_stage3_1);
                 break;
             case 2:
-                setContentView(R.layout.activity_exercise_2_3);
+                setContentView(R.layout.activity_exercise_stage3_2);
                 break;
             case 3:
-                setContentView(R.layout.activity_exercise_3_3);
+                setContentView(R.layout.activity_exercise_stage3_3);
                 break;
             case 4:
-                setContentView(R.layout.activity_exercise_4_3);
+                setContentView(R.layout.activity_exercise_stage3_4);
                 break;
             case 5:
-                setContentView(R.layout.activity_exercise_5_3);
+                setContentView(R.layout.activity_exercise_stage3_5);
                 break;
-            case 6:
-                setContentView(R.layout.activity_exercise_6_3);
-                break;
-            case 7:
-                setContentView(R.layout.activity_exercise_7_3);
-                break;
-            case 8:
-                setContentView(R.layout.activity_exercise_8_3);
-                break;
-            case 9:
-                setContentView(R.layout.activity_exercise_9_3);
-                break;
-            case 10:
-                setContentView(R.layout.activity_exercise_10_3);
-                break;
-            case 11:
-                setContentView(R.layout.activity_exercise_11_3);
-                break;
-            case 12:
-                setContentView(R.layout.activity_exercise_12_3);
-                break;
-            case 13:
-                setContentView(R.layout.activity_exercise_13_3);
-                break;
+
+
         }
 
 
@@ -164,30 +142,9 @@ public class ThirdActivity3 extends AppCompatActivity {
             case "5":
                 instructions = getString(R.string.pose5);
                 break;
-            case "6":
-                instructions = getString(R.string.pose6);
-                break;
-            case "7":
-                instructions = getString(R.string.pose7);
-                break;
-            case "8":
-                instructions = getString(R.string.pose8);
-                break;
-            case "9":
-                instructions = getString(R.string.pose9);
-                break;
-            case "10":
-                instructions = getString(R.string.pose10);
-                break;
-            case "11":
-                instructions = getString(R.string.pose11);
-                break;
-            case "12":
-                instructions = getString(R.string.pose12);
-                break;
-            case "13":
-                instructions = getString(R.string.pose13);
-                break;
+
+
+
         }
 
         if (!instructions.isEmpty()) {

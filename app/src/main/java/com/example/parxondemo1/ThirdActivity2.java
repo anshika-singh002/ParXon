@@ -70,44 +70,36 @@ public class ThirdActivity2 extends AppCompatActivity {
         switch(intvalue){
 
             case 1:
-                setContentView(R.layout.activity_exercise_1_2);
+                setContentView(R.layout.activity_exercise_stage2_1);
                 break;
             case 2:
-                setContentView(R.layout.activity_exercise_2_2);
+                setContentView(R.layout.activity_exercise_stage2_2);
                 break;
             case 3:
-                setContentView(R.layout.activity_exercise_3_2);
+                setContentView(R.layout.activity_exercise_stage2_3);
                 break;
             case 4:
-                setContentView(R.layout.activity_exercise_4_2);
+                setContentView(R.layout.activity_exercise_stage2_4);
                 break;
             case 5:
-                setContentView(R.layout.activity_exercise_5_2);
+                setContentView(R.layout.activity_exercise_stage2_5);
                 break;
             case 6:
-                setContentView(R.layout.activity_exercise_6_2);
+                setContentView(R.layout.activity_exercise_stage2_6);
                 break;
             case 7:
-                setContentView(R.layout.activity_exercise_7_2);
+                setContentView(R.layout.activity_exercise_stage2_7);
                 break;
             case 8:
-                setContentView(R.layout.activity_exercise_8_2);
+                setContentView(R.layout.activity_exercise_stage2_8);
                 break;
             case 9:
-                setContentView(R.layout.activity_exercise_9_2);
+                setContentView(R.layout.activity_exercise_stage2_9);
                 break;
             case 10:
-                setContentView(R.layout.activity_exercise_10_2);
+                setContentView(R.layout.activity_exercise_stage2_10);
                 break;
-            case 11:
-                setContentView(R.layout.activity_exercise_11_2);
-                break;
-            case 12:
-                setContentView(R.layout.activity_exercise_12_2);
-                break;
-            case 13:
-                setContentView(R.layout.activity_exercise_13_2);
-                break;
+
         }
 
 
@@ -178,15 +170,7 @@ public class ThirdActivity2 extends AppCompatActivity {
             case "10":
                 instructions = getString(R.string.pose10);
                 break;
-            case "11":
-                instructions = getString(R.string.pose11);
-                break;
-            case "12":
-                instructions = getString(R.string.pose12);
-                break;
-            case "13":
-                instructions = getString(R.string.pose13);
-                break;
+
         }
 
         if (!instructions.isEmpty()) {

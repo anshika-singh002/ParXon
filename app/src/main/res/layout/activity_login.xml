@@ -53,7 +53,7 @@
                 android:textStyle="bold"
                 android:textColor="@color/colorDarkestgreen"/>
 
-<<<<<<< Updated upstream
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -68,8 +68,7 @@
                 />
 
 
-=======
->>>>>>> Stashed changes
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
