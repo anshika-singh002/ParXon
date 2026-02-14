@@ -12,21 +12,23 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Role extends AppCompatActivity {
+public class Tracker extends AppCompatActivity {
 
-    private Button PatientButton;
-    private Button CaregiverButton;
+    private Button TrackStage1;
+    private Button TrackStage2;
+    private Button TrackStage3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_role);
+        setContentView(R.layout.activity_tracker);
 
-        PatientButton = findViewById(R.id.PatientButton);
-        CaregiverButton = findViewById(R.id.CaregiverButton);
+        TrackStage1 = findViewById(R.id.TrackStage1);
+        TrackStage2 = findViewById(R.id.TrackStage2);
+        TrackStage3 = findViewById(R.id.TrackStage3);
 
-        PatientButton.setOnClickListener(new View.OnClickListener() {
+        TrackStage1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 SharedPreferences preferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
@@ -34,14 +36,14 @@ public class Role extends AppCompatActivity {
                 editor.putBoolean("isLoggedIn", true); // Mark user as logged in
                 editor.apply();
 
-                Intent intent = new Intent(Role.this, MainActivity.class);
+                Intent intent = new Intent(Tracker.this, MainActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
 
             }
         });
 
-        CaregiverButton.setOnClickListener(new View.OnClickListener() {
+        TrackStage2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 SharedPreferences preferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
@@ -49,7 +51,22 @@ public class Role extends AppCompatActivity {
                 editor.putBoolean("isLoggedIn", true); // Mark user as logged in
                 editor.apply();
 
-                Intent intent = new Intent(Role.this, PatientDetails.class);
+                Intent intent = new Intent(Tracker.this, MainActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+
+            }
+        });
+
+        TrackStage3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SharedPreferences preferences = getSharedPreferences("MyAppPrefs", MODE_PRIVATE);
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.putBoolean("isLoggedIn", true); // Mark user as logged in
+                editor.apply();
+
+                Intent intent = new Intent(Tracker.this, MainActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
 
